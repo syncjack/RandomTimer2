@@ -130,6 +130,7 @@
     }
 
     $: if (volume) {
+        synth.volume.value = -20 + (21 * volume);
         Howler.volume(volume);
     }
 
